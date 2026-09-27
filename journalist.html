@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости технологий — Журналист</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container menu">
+            <a class="logo" href="index.html">ТехноНовости</a>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a class="active" href="journalist.html">Журналист</a>
+                <a href="admin.html">Администратор</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Создать статью</h1>
+        <form>
+            <label for="title">Заголовок</label>
+            <input id="title" type="text" placeholder="Введите заголовок">
+
+            <label for="text">Текст статьи</label>
+            <textarea id="text" placeholder="Введите текст статьи"></textarea>
+
+            <button type="button">Создать статью</button>
+        </form>
+        <p class="note">Пока форма служит для вёрстки. Позже она будет сохранять статью в базу данных.</p>
+    </main>
+
+    <footer>ТехноНовости, 2026</footer>
+</body>
+</html>

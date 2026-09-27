@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.container {
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #1f4e79;
+    padding: 18px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 15px;
+}
+
+nav a:hover, nav .active {
+    text-decoration: underline;
+}
+
+main {
+    min-height: calc(100vh - 130px);
+    padding: 30px 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.news-card, form {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}
+
+.news-card h2 {
+    margin-top: 0;
+}
+
+.description, .note {
+    color: #555;
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+}
+
+label {
+    margin: 12px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    font: inherit;
+}
+
+textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+button {
+    width: auto;
+    margin-top: 15px;
+    padding: 10px 16px;
+    color: white;
+    background: #1f4e79;
+    border: 0;
+    cursor: pointer;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: white;
+    background: #333;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: block;
+    }
+
+    nav {
+        margin-top: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 10px 4px 0;
+    }
+}
